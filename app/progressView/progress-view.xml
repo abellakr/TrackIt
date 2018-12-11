@@ -1,0 +1,67 @@
+<Page loaded="pageLoaded" 
+        navigatingTo = "onNavigatingTo"
+            xmlns="http://schemas.nativescript.org/tns.xsd"
+            xmlns:bottomNav="nativescript-bottom-navigation"
+            class="progress-view">
+
+    <ActionBar class = "main-bar" title = "VIEW PROGRESS">
+        <ActionItem tap=" {{ onAdd }} "
+            ios.systemIcon="4" ios.position="right"
+            android.systemIcon="ic_menu_add" android.position="actionBar">
+        </ActionItem>
+    </ActionBar>
+
+    <StackLayout>
+        <GridLayout columns="*" rows="*, 7*">
+
+            <StackLayout row = "0" class = "average-weight-label">
+                <GridLayout columns = "2*,*,*">
+                    <label class = "weight-header" col = "0" text = "Average weight:"/>  
+                    <label col = "2" textAlignment = "center" text = " {{ averageWeight }} "/>      
+                </GridLayout>
+            </StackLayout>
+
+            <StackLayout row="1" class = "repeater">
+                <StackLayout class = "body">
+                    <Repeater items = "{{ items }}" class = "list"> 
+                        <Repeater.itemTemplate>
+                            <label text = " {{ name }} " />
+                        </Repeater.itemTemplate>
+                    </Repeater>
+                </StackLayout>
+            </StackLayout>
+
+        </GridLayout>
+    </StackLayout>
+</Page>
+
+
+<!-- <bottomNav:BottomNavigation activeColor="black"
+                                inactiveColor="gray"
+                                backgroundColor="white"
+                                keyLineColor="black"
+                                loaded="bottomNavigationLoaded"
+                                row="1"
+                                selectedTabIndex = "0">
+        <bottomNav:BottomNavigationTab title="view progress" icon="home"></bottomNav:BottomNavigationTab>
+        <bottomNav:BottomNavigationTab title="add progress" icon="add_2x"></bottomNav:BottomNavigationTab>
+        <bottomNav:BottomNavigationTab title="settings" icon="settings"></bottomNav:BottomNavigationTab>
+    </bottomNav:BottomNavigation> -->
+<!-- 
+    <StackLayout>
+    <GridLayout rows = "*, 9*" columns = "*">
+    <StackLayout class = "yes" row = "0" orientation="horizontal" >
+        <label class = "weightHeader" textAlignment = "center" text = "Week" />
+        <label textAlignment = "center" text = "Sun" />
+        <label textAlignment = "center" text = "Mon" />
+        <label textAlignment = "center" text = "Tues" />
+        <label textAlignment = "center" text = "Wed" />
+        <label textAlignment = "center" text = "Thurs" />
+        <label textAlignment = "center" text = "Fri" />
+        <label textAlignment = "center" text = "Sat" />
+        <label textAlignment = "center" text = "Avg"/>
+    </StackLayout>
+    </GridLayout>
+
+    </StackLayout> -->
+

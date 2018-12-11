@@ -1,0 +1,50 @@
+.home-page {
+    background-color: whitesmoke; /*#f0ffff*/
+}
+
+.action-Item {
+    font-family: Font Awesome 5 Free, fa-regular-400;
+    font-weight: 400;
+}
+
+.main-bar {   
+    background-color: lightblue;
+}
+
+.inputs {
+    margin: 0 5 15 5;
+}
+.inputs label {
+    border-bottom-width: 1;
+    border-bottom-color: gray;
+} 
+.inputs textField {
+    border-bottom-width: 1;
+    border-bottom-color: gray;
+} 
+
+.inputs Button {
+    border-bottom-width: 1;
+    border-bottom-color: gray;   
+}
+
+.image {
+    font-family: Font Awesome 5 Free, fa-regular-400;
+    font-weight: 400;
+    color: black;
+     
+}
+
+.dateBox {
+    font-family: Font Awesome 5 Free, fa-regular-400;
+
+    font-size: 16;
+    color: black;
+}
+
+.imageBox {
+    border-radius: 90;
+    border-width: 1 1 1 1;
+    border-color: black;
+    margin: 30 30 30 30;
+}

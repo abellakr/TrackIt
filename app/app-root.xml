@@ -1,0 +1,13 @@
+<TabView androidTabsPosition="bottom" class = "tabs" >
+    <TabViewItem title="Home" ios:iconSource="res://tabIcons/home@3x" android:iconSource="res://home" >
+        <Frame id = "homeFrame" defaultPage="progressView/progress-view"></Frame>
+    </TabViewItem>
+
+    <TabViewItem title="Browse" ios:iconSource="res://tabIcons/add_2x" android:iconSource="res://browse">
+        <Frame id = "browseFrame" defaultPage="addProgress/add-progress"></Frame>
+    </TabViewItem>
+
+    <TabViewItem title="Search" ios:iconSource="res://tabIcons/settings" android:iconSource="res://search">
+        <Frame id = "searchFrame" defaultPage="settings/settings"></Frame>
+    </TabViewItem>
+</TabView>

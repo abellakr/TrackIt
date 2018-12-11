@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "nativescript-permissions@1.2.3",
+      "/Users/karlosrafaelabellanosa/Desktop/projects/practice"
+    ]
+  ],
+  "_from": "nativescript-permissions@1.2.3",
+  "_id": "nativescript-permissions@1.2.3",
+  "_inBundle": false,
+  "_integrity": "sha1-4+ZVRfmP5IjdVXj3/5DrrjCI5wA=",
+  "_location": "/nativescript-permissions",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nativescript-permissions@1.2.3",
+    "name": "nativescript-permissions",
+    "escapedName": "nativescript-permissions",
+    "rawSpec": "1.2.3",
+    "saveSpec": null,
+    "fetchSpec": "1.2.3"
+  },
+  "_requiredBy": [
+    "/nativescript-camera",
+    "/nativescript-imagepicker"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-permissions/-/nativescript-permissions-1.2.3.tgz",
+  "_spec": "1.2.3",
+  "_where": "/Users/karlosrafaelabellanosa/Desktop/projects/practice",
+  "author": {
+    "name": "Nathanael Anderson",
+    "email": "nathan@master-technology.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanaela/nativescript-permissions/issues"
+  },
+  "description": "A NativeScript plugin to deal with Android permissions",
+  "homepage": "https://github.com/nathanaela/nativescript-permissions",
+  "keywords": [
+    "NativeScript",
+    "permissions",
+    "android",
+    "android 6"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/nathanaela/nativescript-permissions/blob/master/LICENSE"
+  },
+  "main": "permissions",
+  "name": "nativescript-permissions",
+  "nativescript": {
+    "platforms": {
+      "android": "1.8.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanaela/nativescript-permissions.git"
+  },
+  "typings": "index.d.ts",
+  "version": "1.2.3"
+}

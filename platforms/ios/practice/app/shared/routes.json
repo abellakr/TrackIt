@@ -1,0 +1,5 @@
+{
+    "addProgress": "./addProgress/add-progress",
+    "progressView": "./progressView/progress-view",
+    "settings": "./settings/settings"
+}

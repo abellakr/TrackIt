@@ -1,0 +1,27 @@
+<Page loaded="pageLoaded" 
+            xmlns="http://schemas.nativescript.org/tns.xsd"
+            xmlns:bottomNav="nativescript-bottom-navigation"
+            class="settings">
+
+    <ActionBar class = "main-bar1" title = "SETTINGS"></ActionBar>
+
+    <GridLayout columns="*"
+            rows="*, auto">
+    <StackLayout row="0">
+        <label text="this is the settings area"/>
+    </StackLayout>
+<!-- 
+    <bottomNav:BottomNavigation activeColor="black"
+                                inactiveColor="gray"
+                                backgroundColor="white"
+                                keyLineColor="black"
+                                loaded="bottomNavigationLoaded"
+                                row="1"
+                                selectedTabIndex = "2">
+        <bottomNav:BottomNavigationTab title="view progress" icon="home"></bottomNav:BottomNavigationTab>
+        <bottomNav:BottomNavigationTab title="add progress" icon="add_2x"></bottomNav:BottomNavigationTab>
+        <bottomNav:BottomNavigationTab title="settings" icon="settings"></bottomNav:BottomNavigationTab>
+    </bottomNav:BottomNavigation> -->
+    </GridLayout>
+
+</Page>

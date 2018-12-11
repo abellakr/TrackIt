@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "lib": ["es6", "dom"],
+        "baseUrl": ".",
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "pretty": true,
+        "noEmitHelpers": true
+    },
+    "exclude": [
+        "node_modules",
+        "platforms",
+        "hooks"
+    ],
+    "compileOnSave": false,
+    "angularCompilerOptions": {
+        "annotateForClosureCompiler": true,
+        "strictMetadataEmit": true,
+        "skipTemplateCodegen": true,
+        "genDir": "."
+    }
+}

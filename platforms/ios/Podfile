@@ -1,0 +1,24 @@
+use_frameworks!
+
+target "practice" do
+# Begin Podfile - /Users/karlosrafaelabellanosa/Desktop/projects/practice/node_modules/nativescript-bottom-navigation/platforms/ios/Podfile 
+ use_frameworks!
+
+pod 'MaterialComponents/BottomNavigation'
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == 'MaterialComponents'
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+            end
+        end
+    end
+end
+ 
+ # End Podfile 
+# Begin Podfile - /Users/karlosrafaelabellanosa/Desktop/projects/practice/node_modules/nativescript-imagepicker/platforms/ios/Podfile 
+ pod 'QBImagePickerController', '~> 3.4.0' 
+ # End Podfile 
+
+end

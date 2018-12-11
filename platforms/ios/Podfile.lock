@@ -1,0 +1,39 @@
+PODS:
+  - MaterialComponents/BottomNavigation (59.0.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Ink (59.0.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (59.0.0)
+  - MaterialComponents/private/Math (59.0.0)
+  - MaterialComponents/ShadowElevations (59.0.0)
+  - MaterialComponents/ShadowLayer (59.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Typography (59.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (1.0.4)
+  - QBImagePickerController (3.4.0)
+
+DEPENDENCIES:
+  - MaterialComponents/BottomNavigation
+  - QBImagePickerController (~> 3.4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MaterialComponents
+    - MDFInternationalization
+    - QBImagePickerController
+
+SPEC CHECKSUMS:
+  MaterialComponents: 3607dd0e952af5c0254798758b6944712465243f
+  MDFInternationalization: e355b0cebecf53d60233bd267084e49366c82513
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+
+PODFILE CHECKSUM: 2ec0d645c7a9a9246737d0711d31ac000c3a5ce7
+
+COCOAPODS: 1.5.3

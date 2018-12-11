@@ -1,0 +1,38 @@
+.main-bar {
+    background-color: lightblue;
+}
+
+.average-weight-label{
+    margin: 0 0 20 0;
+    background-color: beige;
+    border-width: 0 0 1 0;
+    border-color: black;
+}
+
+.weight-header{
+    margin: 0 0 0 5;
+}
+.new-items {
+    margin: 0 40 0 40;
+    background-color: beige;
+    border-width: 0 0 1 0;
+}
+
+.list {
+    color: black;
+    margin: 0 10 10 10;
+    font-size: 24;
+}
+
+/* 
+.yes label {
+    margin: 4;
+}
+.yes {
+    border-width: 1; 
+    /* border-bottom: 1;
+}
+
+.weightHeader {
+    border-width: 1 1 1 1;
+} */

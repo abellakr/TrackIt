@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      "nativescript-bottom-navigation@1.4.4",
+      "/Users/karlosrafaelabellanosa/Desktop/projects/practice"
+    ]
+  ],
+  "_from": "nativescript-bottom-navigation@1.4.4",
+  "_id": "nativescript-bottom-navigation@1.4.4",
+  "_inBundle": false,
+  "_integrity": "sha512-BpemDUW2mtjkwZuQYGPUOtOcDYJ7Ih0uoTubTW8DoeapJ+mAUtnmeuWayBZA5W/hZ4ZohvBMSgrq16tHXvDBVg==",
+  "_location": "/nativescript-bottom-navigation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nativescript-bottom-navigation@1.4.4",
+    "name": "nativescript-bottom-navigation",
+    "escapedName": "nativescript-bottom-navigation",
+    "rawSpec": "1.4.4",
+    "saveSpec": null,
+    "fetchSpec": "1.4.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-bottom-navigation/-/nativescript-bottom-navigation-1.4.4.tgz",
+  "_spec": "1.4.4",
+  "_where": "/Users/karlosrafaelabellanosa/Desktop/projects/practice",
+  "author": {
+    "name": "Henry Chavez",
+    "email": "henry.chavez@bytpher.com"
+  },
+  "bugs": {
+    "url": "https://github.com/henrychavez/nativescript-bottom-navigation/issues"
+  },
+  "description": "Nativescript plugin to add a bottom navigation component for Android & iOS",
+  "devDependencies": {
+    "@angular/common": "~6.0.6",
+    "@angular/compiler": "~6.0.6",
+    "@angular/compiler-cli": "~6.0.6",
+    "@angular/core": "~6.0.6",
+    "nativescript-angular": "~6.0.6",
+    "rxjs": "5.4.2",
+    "tns-core-modules": "^4.0.0",
+    "tns-platform-declarations": "^4.0.0",
+    "tslint": "~5.4.3",
+    "typescript": "~2.7.2",
+    "zone.js": "~0.8.4"
+  },
+  "homepage": "https://github.com/henrychavez/nativescript-bottom-navigation",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Typescript",
+    "Android",
+    "iOS",
+    "Henry Chavez",
+    "Bytpher",
+    "Bottom Navigation",
+    "Material Design"
+  ],
+  "license": "Apache-2.0",
+  "main": "bottom-navigation",
+  "name": "nativescript-bottom-navigation",
+  "nativescript": {
+    "platforms": {
+      "android": "4.0.0",
+      "ios": "4.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrychavez/nativescript-bottom-navigation.git"
+  },
+  "scripts": {
+    "build": "npm i && tsc && tns plugin build && npm run ngc",
+    "build.iosOnly": "npm i && tsc && npm run ngc",
+    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
+    "clean": "cd ../demo && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.link",
+    "clean.angular": "cd ../demo-angular && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.angular.link",
+    "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
+    "demo.angular.android": "npm i && npm run tsc && cd ../demo-angular && tns run android --syncAllFiles",
+    "demo.angular.ios": "npm i && npm run tsc && cd ../demo-angular && tns run ios --syncAllFiles",
+    "demo.angular.reset": "cd ../demo-angular && rimraf platforms",
+    "demo.ios": "npm i && npm run tsc && cd ../demo && tns run ios --syncAllFiles",
+    "demo.reset": "cd ../demo && rimraf platforms",
+    "ngc": "node --max-old-space-size=8192 ./node_modules/.bin/ngc",
+    "plugin.angular.link": "npm link && cd ../demo-angular && npm link nativescript-bottom-navigation && cd ../src",
+    "plugin.angular.prepare": "npm run build && cd ../demo-angular && tns plugin remove nativescript-bottom-navigation && tns plugin add ../src",
+    "plugin.link": "npm link && cd ../demo && npm link nativescript-bottom-navigation && cd ../src",
+    "plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-bottom-navigation && tns plugin add ../src",
+    "plugin.tscwatch": "npm run tsc -- -w",
+    "prepublishOnly": "npm run build",
+    "test.android": "npm i && npm run tsc && npm run ci.tslint && cd ../demo && tns build android && tns test android --justlaunch",
+    "test.angular.android": "npm i && npm run tsc && npm run ci.tslint && cd ../demo-angular && tns build android && tns test android --justlaunch",
+    "test.angular.ios": "npm i && npm run tsc && npm run ci.tslint && cd ../demo-angular && tns build ios && tns test ios --justlaunch",
+    "test.ios": "npm i && npm run tsc && npm run ci.tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
+    "tsc": "tsc -skipLibCheck"
+  },
+  "typings": "index.d.ts",
+  "version": "1.4.4"
+}

@@ -1,0 +1,50 @@
+<Page loaded="pageLoaded" xmlns="http://schemas.nativescript.org/tns.xsd"
+            xmlns:bottomNav="nativescript-bottom-navigation"
+            class="add-progress">
+
+    <ActionBar class = "main-bar" title = "ADD PROGRESS">
+    <ActionItem tap=" {{ onCancel }} "
+        ios.systemIcon="1" ios.position="left"
+        android.systemIcon="ic_menu_share" android.position="actionBar">
+    </ActionItem>
+    <ActionItem class = "action-Item" tap=" {{ onSave }} "
+        ios.systemIcon="3" ios.position="right"
+        android.position="popup"></ActionItem>
+    </ActionBar>
+
+        <GridLayout columns="*"
+                rows="*, auto">
+        <StackLayout row="0">
+            <StackLayout class = "home-page" >
+                <GridLayout rows = "2*,5*" columns = "*">
+                    <StackLayout row = "0" class = "inputs" >
+                        <GridLayout rows = "*, *, *, *" columns = "2*, *, auto">   
+                            <!-- weight input -->
+                            <Label row = "0" text = "WEIGHT"/> 
+                            <textField row = "0"  col = "1"  class = "weightBox" textAlignment = "right" text=" {{ weight_input }} " hint="{{ weight_input_hint }}" KeyboardType = "number" ReturnKeyType = "done" />
+                            <label row = "0" col = "2" textAlignment = "center" text = "lbs"/>
+                        
+                        <!-- calories input -->
+                            <Label row = "1" text = "CALORIES" />                     
+                            <textField row = "1"  col = "1" class = "calorieBox" textAlignment = "right" text=" {{ calorie_input }} " hint="{{ calorie_input_hint }}" KeyboardType = "number" ReturnKeyType = "done"/>
+                            <label row = "1" col = "2" textAlignment = "center" text = "cals"/> 
+
+                        <!-- date input -->
+                            <label row = "2" col = "0" textAlignment = "left" text= "DATE" />   
+                            <label row = "2" col = "1"/>
+                            <Button row = "2" col = "2" textAlignment = "left" text = "{{ currDate }}" class = "dateBox" tap = "{{ selectDate }}" />
+                            
+                            <!-- progress photo input -->
+                            <label row = "3" textAlignment = "left" text = "PROGRESS PICTURE" />  
+                            <label row = "3" col = "1"/>  
+                            <Button class = "image" textAlignment = "center" row = "3" col = "2" text = "&#xf030;" tap = " {{ getPicture }}" />
+                        </GridLayout>
+                    </StackLayout>
+                    <image row = "1" col = "0" src = "https://i0.wp.com/hifadhiafrica.org/wp-content/uploads/2017/01/default-placeholder.png" id = "image" class = "imageBox" stretch = "aspectFill" /> 
+                </GridLayout>
+            </StackLayout>
+        </StackLayout>
+        </GridLayout>
+</Page>
+
+<!-- text= "&#xf70c;//fitness    &#xf073; //calendar" &#xf030;  //image-->
